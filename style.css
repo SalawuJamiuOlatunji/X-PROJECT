@@ -1,7 +1,7 @@
 /* X */
 *{padding: 0;
 margin: 0;
-border: 1px solid blue;}
+border: none;}
 /* scetion1 */
 #section1{width: 100%;
 height: 90vh;
@@ -13,13 +13,13 @@ display: flex;}
 height: 100%;}
 
 /* left side */
-#sec1Div1{border: 5px solid purple;
+#sec1Div1{border:none;
 display: flex;
 justify-content: center;
 align-items: center;}
 
 /* right side */
-#sec1Div2{border: 5px solid orangered;}
+#sec1Div2{border:none;}
 #sec1Div2>h1{margin-top: 100px;
 margin-bottom: 60px;}
 #sec1Div2>p{font-weight: 900 !important;}
@@ -80,7 +80,7 @@ border-radius: 100px;}
 height: 10vh;
 background: black;
 display: flex;
-border: 3px solid green;}
+border: none;}
 
 #sec2List{width: 100%;
 height: 100%;
@@ -97,9 +97,23 @@ font-size: small;
 
 margin: 0 8px;}
 
+/* modal */
+#modal{left: 400px !important;}
+#modalDialog{width: 400px !important;}
+/* modal image for google */
+#google>img{width: 30px;
+    height: 30px;
+border-radius: 100px;}
+/* modal body */
+#modalBody{display: flex;}
+#modalBody>img{width: 30px;
+    height: 30px;
+border-radius: 100px;}
+/* modal footer */
+#modalFooter{display: flex;
+justify-content: center !important;}
 
-
-
+#modalFooter>button{width: 90%;}
 
 
 

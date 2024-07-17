@@ -174,7 +174,13 @@ height: 100%;}
 /* icon list */
 #sec4Div1List{width: 100%;
 height: 100%;}
-#sec4Div1Lists>i{font-size: 30px;}
+#sec4Div1Lists{display: flex;
+justify-content: end;
+margin: 20px 0;}
+#sec4Div1Lists>i{font-size: 25px;}
+#sec4Div1Lists>img{width: 40px;
+    height: 40px;
+border-radius: 100px;}
 
 
 

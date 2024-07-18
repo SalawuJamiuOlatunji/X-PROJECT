@@ -164,7 +164,7 @@ justify-content: center !important;}
 /* scetion4 */
 #section4{
 width: 100%;
-height: 100vh;
+height: 1000px;
 display: flex;
 background-color: black;}
 
@@ -221,6 +221,8 @@ border:none;}
 border-radius: 100px;}
 
 #sec4Div2Child2>#child2Div1>input{height: 100%;
+color: white;
+font-style: italic;
 width: 100%;
 background-color: transparent;
 font-size: 20px;}
@@ -243,6 +245,40 @@ align-items: center;
     color: navy;
 border: 1px solid gray;
 }
+
+/* sec4Div2Child4 */
+#sec4Div2Child4{width: 100%;
+border: 3px solid red;
+height: 600px;}
+
+/* display picture and name */
+#sec4Div2Child4Child1{width: 100%;
+    display: flex;
+    align-items: start;
+height: 55px;
+border: 3px solid yellow;}
+#sec4Div2Child4Child1>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* rigth side*/
 #sec4Div3{width: 35%;

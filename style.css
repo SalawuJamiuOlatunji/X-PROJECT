@@ -226,7 +226,7 @@ background-color: transparent;
 font-size: 20px;}
 
 #child2Div2{width: 100%;
-border: 2px solid red;
+border-top: 1px solid gray;
 width: 100%;
 display: flex;
 align-items: center;

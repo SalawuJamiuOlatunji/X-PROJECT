@@ -170,7 +170,7 @@ background-color: black;}
 
 /* left side*/
 #sec4Div1{width: 15%;
-border: 3px solid lime;
+border: 1px solid #2F3336;
 height: fit-content;}
 /* icon list */
 #sec4Div1List{width: 100%;
@@ -357,7 +357,7 @@ font-size: 20px !important;}
 
     /* rigth side*/
 #sec4Div3{width: 35%;
-    border: 3px solid orangered;
+    border: 1px solid #2F3336;
     height: fit-content;
 padding: 5px 20px;}
 
@@ -412,13 +412,18 @@ margin-right:  5px;
 font-size:14px;}
 
 /* messages */
-#messages{width: 350px;
-height: 60px;
+#messages{width: 360px;
+height: 55px;
+margin-right: 20px;
 display: flex;
 align-items: center;
 justify-content: space-between;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
+position: fixed;
+bottom: 0;
+right: 0;
+background-color: inherit;
 border: 1px solid #2F3336;
 z-index: 2;}
 

@@ -169,9 +169,13 @@ display: flex;
 background-color: black;}
 
 /* left side*/
-#sec4Div1{width: 15%;
+#sec4Div1{
+width: 15%;
 border: 1px solid #2F3336;
-height: fit-content;}
+background-color: inherit;
+height: 100vh;
+position: fixed;
+}
 /* icon list */
 #sec4Div1List{width: 100%;
 height: 100%;}
@@ -194,7 +198,8 @@ border-radius: 100px;}
 /* center*/
 #sec4Div2{width: 50%;
     height: fit-content;
-border: 1px solid #2F3336;}
+border: 1px solid #2F3336;
+margin-left: 15%;}
 /* sec4Div2Child1 */
 #sec4Div2Child1{width: 100%;
 height: 50px;
@@ -331,7 +336,8 @@ font-size: 20px !important;}
      @media (max-width:500px) {
         
      }
-    
+     
+    /* tweet with picture */
 /* like retweet comment */
 #sec4Div2Child5Child3{ width: 100%;
     height: 30px;
@@ -349,6 +355,25 @@ font-size: 20px !important;}
     padding: 0 20px;}
     #sec4Div2Child5Child3Lists>i{color: #2F3336 !important;
     font-size: 20px !important;}
+
+    /* tweet without picture */
+/* like retweet comment */
+#sec4Div2Child4Child4{ width: 100%;
+    height: 30px;
+    border-bottom:1px solid #2F3336;}
+    /* sec4Div2Child4Child4List */
+    #sec4Div2Child4Child4List{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    list-style: none;}
+    
+    #sec4Div2Child4Child4Lists{color: #2F3336;
+    padding: 0 20px;}
+    #sec4Div2Child4Child4Lists>i{color: #2F3336 !important;
+    font-size: 20px !important;}
     /* responsiveness for small devices */
     @media (max-width:500px) {
         
@@ -359,7 +384,9 @@ font-size: 20px !important;}
 #sec4Div3{width: 35%;
     border: 1px solid #2F3336;
     height: fit-content;
-padding: 5px 20px;}
+padding: 5px 20px;
+position: sticky;
+top: 0px;}
 
 /* searchButton */
 #searchButton{width: 330px !important;
@@ -428,7 +455,16 @@ border: 1px solid #2F3336;
 z-index: 2;}
 
 
-
+@media (max-width:500px) {
+#sec4Div3{display: none;}
+#sec4Div2{width: 80%;
+margin-left: 20%;}
+#sec4Div2Child4Child3{width: 100% !important;
+background-color: red;}
+#sec4Div2Child4Child3>img{width: 100%;}
+#child2Div2>span{margin-left: 1px !important;}
+#sec4Div2Child4Child4Lists{display: none;}
+}
 
 
 

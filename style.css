@@ -463,6 +463,7 @@ width: 550px;
 height: 700px;
 background-color: navy;
 border: 2px solid yellow;}
+#messagesModalHeader{border: 1px solid #2F3336;}
 #messagesModalDiv1{display: flex;
 align-items: center;}
 #messagesModalDiv2{width: 100%;
@@ -471,6 +472,10 @@ height: 40px;}
 #google>img{width: 30px;
     height: 30px;
 border-radius: 100px;}
+
+#createGroup{width: 100%;
+height: 50px;
+border: 1px solid #2F3336;}
 /* modal body */
 #messagesModalBody{display: flex;}
 #messagesModalBody>img{width: 30px;

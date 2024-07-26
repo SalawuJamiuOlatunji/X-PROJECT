@@ -469,12 +469,24 @@ Following
 <div class="modal" tabindex="-1" id="messagesModal">
     <div class="modal-dialog"  id="messagesModalDialog">
       <div class="modal-content" id="messagesModalContent">
-        <div class="modal-header">
-          <h5 class="modal-title py-0" id="modalTitle">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAvVBMVEVHcEz8/f3////////+/v7s7u/6+vr5+vr5+vr9/f3////////5+vr////////Kzs/////////9/v74+fn4+fn////8vwbsTkJFiPPrQjI7q1gpp00yqVPrSTlAhfX9/f2hv/nwgHj2tLGt2bkqe/Q2gPV+qPd7woza5f2WuPns8v5ZtnHD48n92Yj80Wn+6sD4yMXtZ13znpn8xSnwuh3v6+WIwbFwoPb0qKPpKxT1mx7AtydjuXgcpjNCk8nTYqeQAAAAFXRSTlMA5d2fnApdnVLJpWJiowsJZNGXl5g9ng+vAAABP0lEQVQokY2S2XqCMBCFQVGWulRbkIRABASK0FZtq3Z9/8fqZCDK0oueCzJf/sxhJhlF+Z/G1kJVF9a4T2ZD+6LhrM1u7ZZumsyyO5pe2RQ3+O4Qhoddbd32jHzigwiJms4jTAvJqtb7GekIoSbC0F+tCNnvCSFhZawhRE/I84UfP4eyKMEMEXxA3lunYqN2fXZe/ajbjvA1YX10HIeLjXyNyrcQmwAHsD45zgue3gSozQPEgx50UYmELdtTmqYngNJ2WRVEY1nIOnATsS5lK5+MenUr28ANUtmKIvxij1KGuaUbuFgPxxvSxd4Xo9TzisLz2E+SS1e4eCylgFzK4Aj7PuJLVBevTPBfMSQxBp+qsol8UK167DLLsmNZlaVfR0Hv3muDwVjyJuKd8ZzrF8z1eX90jXtTVc07o0/+1C9hwDM1yvfWEgAAAABJRU5ErkJggg==" alt="Google">
-          <small class="text-secondary">Sign in to x.com with Google</small>
+        <div class="modal-header" id="messagesModalHeader">
+            
+          <h5 class="modal-title  py-0" id="messagesModalTitle">
+            <div id="messagesModalDiv1">
+            <button type="button" class="btn-close" style="color: white !important;" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <div class="d-flex justify-content-between" style="width: 500px;height: 40px;">
+            <p class="text-light ms-3">New messsage</p>
+            <button class="btn btn-secondary me-2 text-dark text-center  rounded-5" style="width:70px;height: 30px;">Next</button>
+            </div>
+        </div>
+
+            <div class="mt-2 mb-0"  id="messagesModalDiv2">
+                <i class="fa-solid text-primary me-1 fa-magnifying-glass"></i>
+                <input type="search" style="color: #2F3336; width: 94%; font-size: medium; background-color: inherit;" placeholder="Search People" >
+            </div>
         </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       
         </div>
         <div class="modal-body pb-0" id="messagesModalBody">
             <img src="https://lh3.googleusercontent.com/a/ACg8ocIkj0xLc3UJv2zvK8_0Qywwltot2swNeM2Dt8fXUPjg2IwWZg2S=s96-c" alt="user image">

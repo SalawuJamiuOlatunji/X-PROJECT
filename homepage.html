@@ -42,6 +42,13 @@ For you
 Following
 </button>
         </div>
+
+
+
+
+        <!-- FIREBASE POST INPUT -->
+<div id="firbasePostInput">
+
 <!-- sec4Div2Child2 -->
 <div id="sec4Div2Child2">
     <div class="d-flex align-items-center" id="child2Div1">
@@ -64,12 +71,20 @@ Following
      <button class=" btn btn-primary text-light rounded-4" style="height: 40px; width: 70px;">post</button>
      </div>
 
+    </div>
+
 <!-- sec4Div2Child3 -->
     <div class="btn btn text-primary" id="sec4Div2Child3">
     Show new post
     </div>
 
-<!-- WILL BE USING THIS SIDE LATER -->
+
+
+    
+<!--  FIREBASE POST OUTPUT -->
+<div id="firbasePostOutput" >
+
+
  <!-- first post -->
 <!-- tweet with picture --> 
     <div class="my-2" id="sec4Div2Child4">
@@ -316,7 +331,7 @@ Following
 </div>
 </div>
 
-
+</div>
 
         <!-- right side -->
 <div class="col-sm-4" id="sec4Div3">
@@ -670,22 +685,30 @@ Following
 <div class="modal" tabindex="-1" id="chatModal">
     <div class="modal-dialog"  id="chatModalDialog">
       <div class="modal-content" id="chatModalContent">
-        <div class="modal-header" id="chatModalheader">
-          <h5 class="modal-title py-0" id="chatModalTitle">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAvVBMVEVHcEz8/f3////////+/v7s7u/6+vr5+vr5+vr9/f3////////5+vr////////Kzs/////////9/v74+fn4+fn////8vwbsTkJFiPPrQjI7q1gpp00yqVPrSTlAhfX9/f2hv/nwgHj2tLGt2bkqe/Q2gPV+qPd7woza5f2WuPns8v5ZtnHD48n92Yj80Wn+6sD4yMXtZ13znpn8xSnwuh3v6+WIwbFwoPb0qKPpKxT1mx7AtydjuXgcpjNCk8nTYqeQAAAAFXRSTlMA5d2fnApdnVLJpWJiowsJZNGXl5g9ng+vAAABP0lEQVQokY2S2XqCMBCFQVGWulRbkIRABASK0FZtq3Z9/8fqZCDK0oueCzJf/sxhJhlF+Z/G1kJVF9a4T2ZD+6LhrM1u7ZZumsyyO5pe2RQ3+O4Qhoddbd32jHzigwiJms4jTAvJqtb7GekIoSbC0F+tCNnvCSFhZawhRE/I84UfP4eyKMEMEXxA3lunYqN2fXZe/ajbjvA1YX10HIeLjXyNyrcQmwAHsD45zgue3gSozQPEgx50UYmELdtTmqYngNJ2WRVEY1nIOnATsS5lK5+MenUr28ANUtmKIvxij1KGuaUbuFgPxxvSxd4Xo9TzisLz2E+SS1e4eCylgFzK4Aj7PuJLVBevTPBfMSQxBp+qsol8UK167DLLsmNZlaVfR0Hv3muDwVjyJuKd8ZzrF8z1eX90jXtTVc07o0/+1C9hwDM1yvfWEgAAAABJRU5ErkJggg==" alt="Google">
-          <small class="text-secondary">Sign in to x.com with Google</small>
-        </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header" id="chatModalHeader">
+         
+            <!-- chatUser -->
+            <div id="chatUser">
+                <i class="fa-solid text-light fa-arrow-left"></i>
+               <div class="me-5" >
+                <p class="fw-bold text-light" style="font-size:30px; margin: 0;">salawu adesina</p> 
+                <p class="text-secondary" style="font-size: small;">salawujamiuolatunji60@gmail.com</p>
+               </div>
+               <i class="fa-solid fs-5 text-light fa-angles-down"></i>
+            </div>
+
         </div>
+
+        <!-- TARGET THIS AS FIREBASE OUTPUT -->
         <div class="modal-body pb-0" id="chatModalBody">
-            <img src="https://lh3.googleusercontent.com/a/ACg8ocIkj0xLc3UJv2zvK8_0Qywwltot2swNeM2Dt8fXUPjg2IwWZg2S=s96-c" alt="user image">
-            <span class="mx-2" style="height: 100%;">
-             <p class="fw-bold text-secondary" style="font-size:small; margin: 0;"> Salawu jamiu olatunji</p> 
-             <p class="text-secondary" style="font-size: small;">salawujamiuolatunji60@gmail.com</p>
-            </span>
+        
         </div>
-        <div class="modal-footer" id="chatModalFooter">
-          <a href="loading.html"><button type="button" class="btn btn-primary">Continue as Salawu jamiu olatunji</button></a>
+
+        <!-- TARGET THIS AS FIREBASE INPUT -->
+        <div class="modal-footer px-2 py-1" id="chatModalFooter">
+          <div class="rounded-5" id="inputMessage">
+
+          </div>
         </div>
       </div>
     </div>

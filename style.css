@@ -557,7 +557,9 @@ border-radius: 100px;}
     position: fixed;
     right: 0;
     bottom: 0;}
-    #chatModalHeader{border: 1px solid #2F3336;
+
+    /* FIREBASE USER DETAILS */
+    #chatModalHeader{border: 2px solid yellow;
     height: 70px;}
 
 
@@ -573,12 +575,26 @@ border: 3px solid red;}
         height: 40px;
     border-radius: 100px;}
 
+
+    /*FIREBASE CHAT OUTPUT  */
+#chatModalBody{border: 2px solid orangered;}
+
+/* FIREBASE CHAT INPUT */
 #chatModalFooter{
-    height: 50px;}
+    height: 50px;
+border: 2px solid purple;}
 
 #inputMessage{height: 100%;
     width: 100%;
 background-color: #64686D;}
+
+
+
+
+
+
+
+
 
 @media (max-width:500px) {
 #sec4Div3{display: none;}

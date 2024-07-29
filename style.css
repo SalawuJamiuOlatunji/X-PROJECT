@@ -500,7 +500,7 @@ border-radius: 100px;}
 /* inboxMessageModal */
 #inboxModalContent{
     width: 400px;
-    height: 550px; /*fit content*/
+    height: fit-content; /*fit content*/
     background-color: black;
     border: 2px solid #2F3336;
     position: fixed;
@@ -517,10 +517,28 @@ border-radius: 100px;}
         justify-content: space-between;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;}
-        
 
+        /* modal for inboxUsersMessages */
+#inboxUsersMessages{display: flex;
+    height: fit-content;}
+    #inboxUsersMessages>img{width: 40px;
+        height: 40px;
+    border-radius: 100px;}
+    
     #inboxModalFooter{display: none;}
 
+
+    /* inboxMessageModal */
+#chatModalContent{
+    width: 400px;
+    height: 550px; /*fit content*/
+    background-color: black;
+    border: 2px solid #2F3336;
+    position: fixed;
+    right: 0;
+    bottom: 0;}
+    #chatModalHeader{border: 1px solid #2F3336;
+    height: 70px;}
 
 
 

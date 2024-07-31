@@ -17,3 +17,13 @@ let chat = document.getElementById("inboxUsersMessages")
 chat.onclick = function () {
     $('#chatModal').modal ('show');
 }
+
+
+// load homepage
+function redirectToNewPage() {
+    setTimeout(() => {
+        window.location.href = "homepage.html";
+    }, 5000); 
+}
+
+

@@ -47,13 +47,14 @@ Following
 
 
         <!-- FIREBASE POST INPUT -->
-<div id="firbasePostInput">
+<form id="firbasePostInput">
 
 <!-- sec4Div2Child2 -->
 <div id="sec4Div2Child2">
     <div class="d-flex align-items-center" id="child2Div1">
         <img src="https://pbs.twimg.com/profile_images/1786402643994185728/EZMCz_OG_400x400.jpg" alt="">
-        <input type="text" placeholder="Whats happening?!">
+        <!-- POST TEXT -->
+        <input type="text" placeholder="Whats happening?!" id="PostText">
     </div>
     <p class="ms-5 ps-4 text-primary fw-bold"><i class="fa-solid ms-1 fa-earth-africa"></i>  Everyone can reply</p>
 </div>
@@ -61,22 +62,22 @@ Following
 <!--child2Div2-->
 <div id="child2Div2" >
     <span class="d-flex ms-5 ps-4 align-items-center">
-     <i class="fa-solid fa-image text-primary"></i>
+     <i class="fa-solid fa-image text-primary" id="postImage"></i>
      <i class="fa-regular fa-square text-primary"></i>
      <i class="fa-solid fa-bars text-primary"></i>
      <i class="fa-regular fa-face-smile text-primary"></i>
      <i class="fa-regular fa-calendar text-primary"></i>
      <i class="fa-solid fa-location-dot text-primary"></i>
     </span>
-     <button class=" btn btn-primary text-light rounded-4" style="height: 40px; width: 70px;">post</button>
+     <button class=" btn btn-primary text-light rounded-4" style="height: 40px; width: 70px;" id="postButton">post</button>
      </div>
 
-    </div>
+    </form>
 
 <!-- sec4Div2Child3 -->
-    <div class="btn btn text-primary" id="sec4Div2Child3">
+    <button class="btn btn text-primary" id="sec4Div2Child3">
     Show new post
-    </div>
+    </button>
 
 
 
@@ -473,8 +474,8 @@ Following
     Messages
 </small>
 <small>
-    <i class="fa-regular fs-5 text-light fa-envelope"></i>
-    <i class="fa-solid mx-3 fs-5 text-light fa-angles-up"></i>
+    <i class="fa-regular fs-5 text-light fa-envelope" id="newMessage"></i>
+    <i class="fa-solid mx-3 fs-5 text-light fa-angles-up" id="newMessageClose"></i>
 </small>
 </div>
 
@@ -492,7 +493,7 @@ Following
             
             <div class="d-flex justify-content-between" style="width: 500px;height: 40px;">
             <p class="text-light ms-3">New messsage</p>
-            <button class="btn btn-secondary me-2 text-dark text-center  rounded-5" style="width:70px;height: 30px;">Next</button>
+            <button class="btn btn-secondary me-2 text-dark text-center  rounded-5" id="nextButton" style="width:70px;height: 30px;">Next</button>
             </div>
         </div>
 
@@ -597,8 +598,8 @@ Following
         Messages
     </small>
     <small>
-        <i class="fa-regular fs-5 text-light fa-envelope"></i>
-        <i class="fa-solid mx-3 fs-5 text-light fa-angles-down"></i>
+        <i class="fa-regular fs-5 text-light fa-envelope" id="newMessage"></i>
+        <i class="fa-solid mx-3 fs-5 text-light fa-angles-down" id="newMessageClose"></i>
     </small>
     </div>
 
@@ -688,13 +689,13 @@ Following
 
         <!-- FIREBASE USER DETAILS -->
         <div class="modal-header" id="chatModalHeader">
-            <i class="fa-solid text-light fa-arrow-left "></i>
+            <i class="fa-solid text-light fa-arrow-left" id="reverseChat"></i>
             <!-- chatUser -->
             <div id="chatUser">
                 <p class="fw-bold mb-0 text-light" style="font-size:22px; margin: 0;">salawu adesina</p> 
                 <p class="text-secondary mb-0" style="font-size: 15px;">salawujamiuolatunji60@gmail.com</p>
             </div>
-            <i class="fa-solid fs-5 text-light fa-angles-down"></i>
+            <i class="fa-solid fs-5 text-light fa-angles-down" id="newMessageClose"></i>
         </div>
 
         <!-- FIREBASE CHAT OUTPUT -->
@@ -706,12 +707,12 @@ Following
         <div class="modal-footer px-2 py-1" id="chatModalFooter">
           <div class="rounded-5" id="inputMessage">
             <span>
-                <i class="fa-regular mx-2 fa-image" style="color: #1D9BF0;"></i>
-                <i class="fa-solid me-2 fa-image-portrait" style="color: #1D9BF0;"></i>
-                <i class="fa-regular me-2 fa-face-smile" style="color: #1D9BF0;"></i>
+                <i class="fa-regular mx-2 fa-image" id="chatImage" style="color: #1D9BF0;"></i>
+                <i class="fa-solid me-2 fa-image-portrait" id="chatImage" style="color: #1D9BF0;"></i>
+                <i class="fa-regular me-2 fa-face-smile" id="chatEmoji" style="color: #1D9BF0;"></i>
             </span>
-            <input type="text" style="width: 250px; border-style: hidden; background-color: inherit; color: white;  height: 100% !important;" placeholder="Start a new message">
-            <i class="fa-regular me-2 fa-paper-plane text-primary"></i>  
+            <input type="text" id="chatText" style="width: 250px; border-style: hidden; background-color: inherit; color: white;  height: 100% !important;" placeholder="Start a new message">
+            <i class="fa-regular me-2 fa-paper-plane text-primary" id="sendChat"></i>  
         </div>
         </div>
 

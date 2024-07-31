@@ -559,17 +559,19 @@ border-radius: 100px;}
     bottom: 0;}
 
     /* FIREBASE USER DETAILS */
-    #chatModalHeader{border: 2px solid yellow;
+    #chatModalHeader{border: 1px solid #2F3336;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
     height: 70px;}
 
 
 /*chatUser */
-#chatUser{display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-border: 3px solid red;}
+#chatUser{
+    margin-right: 50px;
+    height: fit-content;
+    width: fit-content;
+border: none;}
     
     #chatUser>i{width: 40px;
         height: 40px;
@@ -577,16 +579,19 @@ border: 3px solid red;}
 
 
     /*FIREBASE CHAT OUTPUT  */
-#chatModalBody{border: 2px solid orangered;}
+#chatModalBody{border: 1px solid #2F3336;}
 
 /* FIREBASE CHAT INPUT */
 #chatModalFooter{
     height: 50px;
-border: 2px solid purple;}
+border: 1px solid #2F3336;}
 
-#inputMessage{height: 100%;
+#inputMessage{height: 100% !important;
     width: 100%;
-background-color: #64686D;}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+background-color: #2F3336;}
 
 
 

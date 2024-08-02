@@ -23,6 +23,17 @@ function newMessage(){
     $('#messagesModal').modal ('show');
 };
 
+function nextChat(){
+    $('#messagesModal').modal ('hide');
+    $('#chatModal').modal ('show');
+};
+
+let nextButtonColor = document.getElementById("nextButtonColor")
+function nextButton(){
+    nextButtonColor.style.backgroundColor = "white";
+    nextButtonColor.style.color = "black";
+};
+
 // angle up onclick shows inbox
 function newMessageOpen(){
     $('#inboxModal').modal ('show'); 

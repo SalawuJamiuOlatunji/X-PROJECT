@@ -470,12 +470,12 @@ Following
 
     <!-- messages -->
 <div class="shadow-lg"  id="messages">
-<small class="fw-bold p-2 fs-4 text-light">
+<small class="fw-bold p-2 fs-4 text-light" id="message">
     Messages
 </small>
 <small>
-    <i class="fa-regular fs-5 text-light fa-envelope" id="newMessage"></i>
-    <i class="fa-solid mx-3 fs-5 text-light fa-angles-up" id="newMessageClose"></i>
+    <i class="fa-regular fs-5 text-light fa-envelope" id="newMessage" onclick="newMessage()"></i>
+    <i class="fa-solid mx-3 fs-5 text-light fa-angles-up" id="newMessageOpen" onclick="newMessageOpen()"></i>
 </small>
 </div>
 
@@ -594,12 +594,12 @@ Following
           
    <!-- inboxMessages -->
    <div class="shadow-lg"  id="inboxUser">
-    <small class="fw-bold p-2 fs-4 text-light">
+    <small class="fw-bold p-2 fs-4 text-light" id="messageClosed" onclick="messageClosed()">
         Messages
     </small>
     <small>
-        <i class="fa-regular fs-5 text-light fa-envelope" id="newMessage"></i>
-        <i class="fa-solid mx-3 fs-5 text-light fa-angles-down" id="newMessageClose"></i>
+        <i class="fa-regular fs-5 text-light fa-envelope"  onclick="showChat()"></i>
+        <i class="fa-solid mx-3 fs-5 text-light fa-angles-down" onclick="closeInbox()"></i>
     </small>
     </div>
 
@@ -607,7 +607,7 @@ Following
         <div class="modal-body pb-0" id="inboxModalBody">
             
             <!--usersMessages 1  -->
-            <div class="my-2" id="inboxUsersMessages">
+            <div class="my-2" id="inboxUsersMessages" onclick="directChat()">
             <img src="https://pbs.twimg.com/profile_images/509341609024974848/Uqe6eG98_400x400.jpeg" alt="user image">
             <span class="mx-2" style="height: 100%;">
              <p class="fw-bold text-light" style="font-size:medium; margin: 0;"> salawu adesina</p> 
@@ -617,7 +617,7 @@ Following
         </div>
 
  <!--usersMessages  2-->
- <div class="my-2" id="inboxUsersMessages">
+ <div class="my-2" id="inboxUsersMessages" onclick="directChat()">
     <img src="https://pbs.twimg.com/profile_images/1564738295891886081/CU7pdeYd_400x400.jpg" alt="user image">
     <span class="mx-2" style="height: 100%;">
      <p class="fw-bold text-light" style="font-size:medium; margin: 0;"> jamiu hamzat</p> 
@@ -627,7 +627,7 @@ Following
 </div>
 
 <!--usersMessages 3 -->
-<div class="my-2" id="inboxUsersMessages">
+<div class="my-2" id="inboxUsersMessages" onclick="directChat()">
     <img src="https://pbs.twimg.com/profile_images/1334967562493440002/0zkD-SYQ_400x400.jpg" alt="user image">
     <span class="mx-2" style="height: 100%;">
      <p class="fw-bold text-light" style="font-size:small; margin: 0;"> GRM Ridwan</p> 
@@ -637,7 +637,7 @@ Following
 </div>
 
 <!--usersMessages  4-->
-<div class="my-2" id="inboxUsersMessages">
+<div class="my-2" id="inboxUsersMessages" onclick="directChat()">
     <img src="https://pbs.twimg.com/profile_images/1690394726095355904/PsUYqs-P_400x400.jpg" alt="user image">
     <span class="mx-2" style="height: 100%;">
      <p class="fw-bold text-light" style="font-size:medium; margin: 0;"> Harsa Dash</p> 
@@ -646,7 +646,7 @@ Following
 </div>
 
 <!--usersMessages 5 -->
-<div class="my-2" id="inboxUsersMessages">
+<div class="my-2" id="inboxUsersMessages" onclick="directChat()">
     <img src="https://pbs.twimg.com/profile_images/1502879391843557378/RrUA_yjw_400x400.jpg" alt="user image">
     <span class="mx-2" style="height: 100%;">
      <p class="fw-bold text-light" style="font-size:medium; margin: 0;"> CRPTO NOUCT</p> 
@@ -655,7 +655,7 @@ Following
 </div>
 
 <!--usersMessages 6 -->
-<div class="my-2" id="inboxUsersMessages">
+<div class="my-2" id="inboxUsersMessages" onclick="directChat()">
     <img src="https://pbs.twimg.com/profile_images/1652328581194719232/bW9TagD5_400x400.jpg" alt="user image">
     <span class="mx-2" style="height: 100%;">
      <p class="fw-bold text-light" style="font-size:medium; margin: 0;"> Francesca Viteritti</p> 
@@ -664,7 +664,7 @@ Following
 </div>
 
 <!--usersMessages  7-->
-<div class="my-2" id="inboxUsersMessages">
+<div class="my-2" id="inboxUsersMessages" onclick="directChat()">
     <img src="https://pbs.twimg.com/profile_images/1434899777695535106/FIeeF7EC_400x400.jpg" alt="user image">
     <span class="mx-2" style="height: 100%;">
      <p class="fw-bold text-light" style="font-size:medium; margin: 0;">CodingWithAnil</p> 
@@ -689,13 +689,13 @@ Following
 
         <!-- FIREBASE USER DETAILS -->
         <div class="modal-header" id="chatModalHeader">
-            <i class="fa-solid text-light fa-arrow-left" id="reverseChat"></i>
+            <i class="fa-solid text-light fs-5 fa-arrow-left" onclick="undoChat()"></i>
             <!-- chatUser -->
             <div id="chatUser">
-                <p class="fw-bold mb-0 text-light" style="font-size:22px; margin: 0;">salawu adesina</p> 
-                <p class="text-secondary mb-0" style="font-size: 15px;">salawujamiuolatunji60@gmail.com</p>
+                <p class="fw-bold mb-0 text-light" style="font-size:22px; margin: 0;">User</p> 
+                <p class="text-secondary mb-0" style="font-size: 15px;">user@gmail.com</p>
             </div>
-            <i class="fa-solid fs-5 text-light fa-angles-down" id="newMessageClose"></i>
+            <i class="fa-solid fs-5 text-light fa-angles-down" onclick="closeChat()"></i>
         </div>
 
         <!-- FIREBASE CHAT OUTPUT -->

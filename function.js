@@ -66,3 +66,22 @@ function closeChat(){
 function directChat(){
     $('#chatModal').modal ('show');
 }
+
+
+
+// THIS IS FIREBASE SECTION
+
+const chat = document.getElementById("chatText");
+const file = document.getElementById("chatFile");
+const btn = document.getElementById("sendChat");
+
+btn.addEventListener('click',()=>{
+db.collection('userInfo').add({
+    chat: chat.value,
+    file: file.value
+});
+chat.value = '';
+file.value = '';
+})
+
+const message =

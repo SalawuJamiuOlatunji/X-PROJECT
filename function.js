@@ -84,4 +84,28 @@ chat.value = '';
 file.value = '';
 })
 
-const message =
+const messages = document.getElementById("messages")
+db.collection("userInfo")
+.get()
+.then((querySnapshot)=>{
+    querySnapshot.foreach((doc)=>{
+        let li = document.createElement("li");
+        let chat = document.createElement("h4");
+        let file = document.createElement("p");
+
+        // file.style.width = "100px"
+        // file.style.height = "100px"
+        // chat.style.color = "blue";
+        chat.textContent = doc.data().chat;
+        file.textContent = doc.data().file;
+
+        li.appendChild(chat);
+        li.appendChild(file);
+
+
+        messages.appendChild(li);
+    });
+})
+.catch((error)=>{
+    console.log("Erro getting documents",error);
+});

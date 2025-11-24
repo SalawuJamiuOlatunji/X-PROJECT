@@ -727,6 +727,43 @@
   justify-content: start;
   background-color: #2f3336;
 }
+
+.message-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* align to right like Twitter user messages */
+  margin: 8px 0;
+}
+
+.message-content {
+  max-width: 70%;
+  background-color: #1d9bf0; /* Twitter blue */
+  padding: 10px 14px;
+  border-radius: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message-text {
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.delete {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.delete:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* ----------------------------- MOBILE ----------------------------- */
 @media (max-width: 500px) {
   /* Section 1 */

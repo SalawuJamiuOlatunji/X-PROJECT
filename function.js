@@ -100,12 +100,16 @@ sender.addEventListener("submit", (e) => {
   send.value = "";
 });
 
-//This function displays the messages
+// This function displays the messages (Twitter style)
 const ui = (message) => {
-  const html = `<div class=" me-2 rounded d-flex bg-primary justify-content-end align-items-center">
-     <span>${message}</span>
-     <i class="far fa-trash-alt bg-danger btn-btn delete"></i>
-     </div><br>`;
+  const html = `
+    <div class="message-box">
+      <div class="message-content">
+        <span class="message-text">${message}</span>
+        <i class="far fa-trash-alt delete"></i>
+      </div>
+    </div>
+  `;
   outPut.innerHTML += html;
 };
 

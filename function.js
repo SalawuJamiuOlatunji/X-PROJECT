@@ -4,6 +4,13 @@ function showModal() {
   $("#modal").modal("show");
 }
 
+// for mobile
+function showModal() {
+  if (window.innerWidth > 500) {
+    $("#modal").modal("show");
+  }
+}
+
 // load homepage
 function redirectToNewPage() {
   setTimeout(() => {

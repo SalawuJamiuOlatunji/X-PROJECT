@@ -26,9 +26,6 @@
   justify-content: center;
   align-items: center;
 }
-/* responsiveness for left side */
-@media (max-width: 500px) {
-}
 
 /* right side */
 #sec1Div2 {
@@ -106,9 +103,6 @@
   width: 300px;
   border-radius: 50px;
 }
-/* Responsiveness for right side */
-@media (max-width: 500px) {
-}
 
 /* section2 */
 #section2 {
@@ -134,9 +128,6 @@
   color: #2f3336;
   font-size: small;
   margin: 0 8px;
-}
-/* responsiveness for section2 */
-@media (max-width: 500px) {
 }
 
 /* modal */
@@ -233,9 +224,6 @@
   border-radius: 100px;
 }
 
-@media (max-width: 500px) {
-}
-
 /* center*/
 #sec4Div2 {
   width: 50%;
@@ -306,9 +294,6 @@
 #child2Div2 > span > i {
   margin: 0 8px;
 }
-/* responsiveness for small devices */
-@media (max-width: 500px) {
-}
 
 /* sec4Div2Child3 */
 #sec4Div2Child3 {
@@ -328,7 +313,7 @@
 #sec4Div2Child4 {
   width: 100%;
   border: 1px solid #2f3336;
-  height: 640px;
+  height: auto;
 }
 
 /* display picture and name */
@@ -349,9 +334,6 @@
 #sec4Div2Child4Child2 {
   height: 100%;
 }
-/* responsiveness for small devices */
-@media (max-width: 500px) {
-}
 
 /* posted image div */
 #sec4Div2Child4Child3 {
@@ -368,12 +350,14 @@
 /* like retweet comment */
 #sec4Div2Child4Child4 {
   width: 100%;
-  height: 30px;
-  border: none;
+  height: auto !important;
+  border-top: 1px solid #2f3336;
 }
 /* sec4Div2Child4Child4List */
 #sec4Div2Child4Child4List {
   display: flex;
+  margin: 0 !important;
+  border: none;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -390,16 +374,12 @@
   font-size: 20px !important;
 }
 
-/* responsiveness for small devices */
-@media (max-width: 500px) {
-}
-
 /* tweet without picture */
-/* sec4Div2Child4 */
+/* sec4Div2Child5 */
 #sec4Div2Child5 {
   width: 100%;
   border: 1px solid #2f3336;
-  height: 60px;
+  height: auto;
 }
 
 /* display picture and name */
@@ -407,7 +387,7 @@
   width: 100%;
   display: flex;
   align-items: start;
-  height: 55px;
+  height: auto;
   border: 1px solid #2f3336;
 }
 #sec4Div2Child5Child1 > img {
@@ -418,20 +398,18 @@
 #sec4Div2Child5Child2 {
   height: 100%;
 }
-/* responsiveness for small devices */
-@media (max-width: 500px) {
-}
 
 /* tweet with picture */
 /* like retweet comment */
 #sec4Div2Child5Child3 {
   width: 100%;
-  height: 30px;
+  height: auto;
   border-bottom: 1px solid #2f3336;
 }
 /* sec4Div2Child4Child4List */
 #sec4Div2Child5Child3List {
   display: flex;
+  margin: 0;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -452,12 +430,13 @@
 /* like retweet comment */
 #sec4Div2Child4Child4 {
   width: 100%;
-  height: 30px;
+  height: auto;
   border-bottom: 1px solid #2f3336;
 }
 /* sec4Div2Child4Child4List */
 #sec4Div2Child4Child4List {
   display: flex;
+  margin: 0;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -472,9 +451,6 @@
 #sec4Div2Child4Child4Lists > i {
   color: #2f3336 !important;
   font-size: 20px !important;
-}
-/* responsiveness for small devices */
-@media (max-width: 500px) {
 }
 
 /* rigth side*/
@@ -785,6 +761,12 @@
   #sign-in {
     width: 90%;
   }
+  #modal {
+    display: none !important;
+  }
+  #modal.active {
+    display: block;
+  }
 
   /* Section2 */
   #section2 {
@@ -800,15 +782,17 @@
   }
 
   /* Homepage layout */
+
   #sec4Div1 {
-    display: none;
+    display: none !important;
   }
   #sec4Div3 {
     display: none;
   }
   #sec4Div2 {
-    width: 100%;
-    margin-left: 0;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   /* Post images */
@@ -820,11 +804,22 @@
     width: 100%;
     height: 100%;
   }
-
-  /* Icons under posts */
+  /* ICON LIST under tweets
   #sec4Div2Child4Child4Lists,
   #sec4Div2Child5Child3Lists {
-    display: none;
+    display: block;
+    height: 500px !important;
+    width: auto;
+  } */
+  #sec4Div2Child4Child4List {
+  }
+  #sec4Div2 {
+    height: auto !important;
+  }
+  #sec4Div2Child4Child1,
+  #sec4Div2Child4,
+  #sec4Div2Child5 {
+    margin-bottom: 3px;
   }
 
   /* Input section spacing */

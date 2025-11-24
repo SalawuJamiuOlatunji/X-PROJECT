@@ -728,25 +728,91 @@
   background-color: #2f3336;
 }
 
+/* ===========================
+   MOBILE RESPONSIVE DESIGN
+   =========================== */
 @media (max-width: 500px) {
-  #sec4Div3 {
+  /* SECTION 1 */
+  #section1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #sec1Div1,
+  #sec1Div2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  #sec1Div2 > h1 {
+    margin-top: 40px;
+  }
+
+  #google,
+  #apple,
+  #create-account,
+  #sign-in {
+    width: 90%;
+  }
+
+  /* SECTION 2 */
+  #sec2List > li {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  /* SECTION 3 (LOADING ICON) */
+  #sec3Div1 > i {
+    font-size: 50px !important;
+  }
+
+  /* SECTION 4 HOMEPAGE LAYOUT */
+  #sec4Div1 {
     display: none;
   }
-  #sec4Div2 {
-    width: 80%;
-    margin-left: 20%;
+
+  #sec4Div3 {
+    display: none; /* right sidebar hidden */
   }
+
+  #sec4Div2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Tweet images */
   #sec4Div2Child4Child3 {
     width: 100% !important;
-    background-color: red;
+    height: auto !important;
   }
+
   #sec4Div2Child4Child3 > img {
     width: 100%;
+    height: auto;
   }
+
+  /* Tweet icons */
   #child2Div2 > span {
-    margin-left: 1px !important;
+    margin-left: 0 !important;
   }
-  #sec4Div2Child4Child4Lists {
-    display: none;
+
+  #sec4Div2Child4Child4Lists,
+  #sec4Div2Child5Child3Lists {
+    display: none; /* hide icon text counts */
+  }
+
+  /* Messages box */
+  #messages {
+    width: 100%;
+    right: 0;
+  }
+
+  /* Chat modal */
+  #chatModalContent,
+  #inboxModalContent,
+  #messagesModalContent {
+    width: 100%;
+    right: 0;
   }
 }

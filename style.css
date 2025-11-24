@@ -727,28 +727,21 @@
   justify-content: start;
   background-color: #2f3336;
 }
-
-/* ===========================
-   MOBILE RESPONSIVE DESIGN
-   =========================== */
+/* ----------------------------- MOBILE ----------------------------- */
 @media (max-width: 500px) {
-  /* SECTION 1 */
+  /* Section 1 */
   #section1 {
     flex-direction: column;
     height: auto;
   }
-
   #sec1Div1,
   #sec1Div2 {
     width: 100%;
-    height: auto;
     text-align: center;
   }
-
   #sec1Div2 > h1 {
     margin-top: 40px;
   }
-
   #google,
   #apple,
   #create-account,
@@ -756,63 +749,95 @@
     width: 90%;
   }
 
-  /* SECTION 2 */
-  #sec2List > li {
-    margin: 5px;
-    font-size: 12px;
+  /* Section2 */
+  #section2 {
+    height: auto;
+  }
+  #sec2List {
+    flex-wrap: wrap;
   }
 
-  /* SECTION 3 (LOADING ICON) */
+  /* Loading page */
   #sec3Div1 > i {
     font-size: 50px !important;
   }
 
-  /* SECTION 4 HOMEPAGE LAYOUT */
+  /* Homepage layout */
   #sec4Div1 {
     display: none;
   }
-
   #sec4Div3 {
-    display: none; /* right sidebar hidden */
+    display: none;
   }
-
   #sec4Div2 {
     width: 100%;
     margin-left: 0;
   }
 
-  /* Tweet images */
+  /* Post images */
   #sec4Div2Child4Child3 {
     width: 100% !important;
-    height: auto !important;
+    height: auto;
+  }
+  #sec4Div2Child4Child3 img {
+    width: 100%;
+    height: 100%;
   }
 
-  #sec4Div2Child4Child3 > img {
+  /* Icons under posts */
+  #sec4Div2Child4Child4Lists,
+  #sec4Div2Child5Child3Lists {
+    display: none;
+  }
+
+  /* Input section spacing */
+  #child2Div2 > span {
+    margin-left: 5px !important;
+  }
+
+  /* Messages modal */
+  #messages {
+    width: 90%;
+  }
+  #messagesModalContent,
+  #inboxModalContent,
+  #chatModalContent {
+    width: 100%;
+  }
+}
+
+/* ----------------------------- TABLET ----------------------------- */
+@media (max-width: 900px) {
+  /* Section1 */
+  #section1 {
+    flex-direction: column;
+    height: auto;
+  }
+  #sec1Div1,
+  #sec1Div2 {
+    width: 100%;
+  }
+
+  /* Homepage layout */
+  #sec4Div1 {
+    width: 20%;
+  }
+  #sec4Div2 {
+    width: 80%;
+    margin-left: 20%;
+  }
+  #sec4Div3 {
+    display: none; /* hide right sidebar on tablets */
+  }
+
+  /* Post images */
+  #sec4Div2Child4Child3 {
     width: 100%;
     height: auto;
   }
 
-  /* Tweet icons */
-  #child2Div2 > span {
-    margin-left: 0 !important;
-  }
-
-  #sec4Div2Child4Child4Lists,
-  #sec4Div2Child5Child3Lists {
-    display: none; /* hide icon text counts */
-  }
-
-  /* Messages box */
+  /* Messages */
   #messages {
-    width: 100%;
-    right: 0;
-  }
-
-  /* Chat modal */
-  #chatModalContent,
-  #inboxModalContent,
-  #messagesModalContent {
-    width: 100%;
-    right: 0;
+    width: 300px;
   }
 }

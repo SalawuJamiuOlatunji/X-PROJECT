@@ -563,9 +563,17 @@
 #messagesModalHeader {
   border: 1px solid #2f3336;
 }
+#messagesModalTitle {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 #messagesModalDiv1 {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  width: 100% !important;
+  margin: 0 !important;
+  height: auto;
 }
 #messagesModalDiv2 {
   width: 100%;
@@ -804,13 +812,7 @@
     width: 100%;
     height: 100%;
   }
-  #nextButtonColor {
-    background-color: #1d9bf0 !important;
-    z-index: 3;
-    width: 50px !important;
-    height: 30px;
-    color: red !important;
-  }
+
   /* enable to see borders */
   /* #sec4Div2Child4Child4,
   #sec4Div2Child5Child3 {
